@@ -1,0 +1,49 @@
+body {
+    margin: 0 auto;
+    width: 70%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15pt 5pt 5pt 5pt;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+nav i {
+    font-size: 20pt;
+    margin: 0 5pt;
+}
+
+nav {
+    margin: 0 -10pt;
+}
+
+#profile-picture {
+    border-radius: 100%;
+    width: 30%;
+    float: right;
+    padding: 20pt 15pt;
+}
+
+main {
+    width: 65%;
+    padding: 60pt 5pt 5pt 5pt;
+}
+
+h2 {
+    font-size: 26pt;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10pt;
+}
+
+.about-me {
+    text-align: justify;
+}
