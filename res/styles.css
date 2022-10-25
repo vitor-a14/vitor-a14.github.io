@@ -1,6 +1,8 @@
 body {
     margin: 0 auto;
     width: 70%;
+    font-family: 'Source Code Pro';
+    line-height: 20pt;
 }
 
 header {
@@ -15,7 +17,7 @@ h1 {
 }
 
 nav i {
-    font-size: 20pt;
+    font-size: 16pt;
     margin: 0 5pt;
 }
 
@@ -27,12 +29,16 @@ nav {
     border-radius: 100%;
     width: 30%;
     float: right;
-    padding: 20pt 15pt;
+    margin: 20pt 15pt;
+    box-shadow: 10px 10px 8px #888888;
 }
 
 main {
-    width: 65%;
     padding: 60pt 5pt 5pt 5pt;
+}
+
+main section {
+    padding-bottom: 35pt;
 }
 
 h2 {
@@ -40,10 +46,43 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10pt;
 }
 
 .about-me {
+    width: 65%;
     text-align: justify;
+}
+
+.games {
+    width: 100%;
+    margin-top: 10pt;
+    background-color: black;
+    padding: 15pt 15pt;
+    color: white;
+    border-radius: 10pt;
+}
+
+.games p {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10pt;
+}
+
+.game-gifs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-gifs img {
+    width: 30%;
+    border: 1px solid white;
+}
+
+h3 {
+    font-size: 18pt;
+    text-align: center;
 }
