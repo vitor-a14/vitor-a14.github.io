@@ -3,6 +3,7 @@ body {
     width: 70%;
     font-family: 'Source Code Pro';
     line-height: 20pt;
+    background-color: whitesmoke;
 }
 
 header {
@@ -10,6 +11,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15pt 5pt 5pt 5pt;
+}
+
+header nav i:hover, .contact-site a:hover {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 h1 {
@@ -20,6 +27,16 @@ nav i {
     font-size: 16pt;
     margin: 0 5pt;
 }
+
+nav i a, .contact-site a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-site a {
+    text-decoration: underline;
+}
+
 
 nav {
     margin: 0 -10pt;
@@ -55,7 +72,7 @@ p {
     text-align: justify;
 }
 
-.games {
+.games, .web-development {
     width: 100%;
     margin-top: 10pt;
     background-color: black;
@@ -64,7 +81,7 @@ p {
     border-radius: 10pt;
 }
 
-.games p {
+.games p, .web-development p {
     text-align: center;
     font-size: 14px;
     padding-bottom: 10pt;
@@ -85,4 +102,49 @@ p {
 h3 {
     font-size: 18pt;
     text-align: center;
+}
+
+.skills {
+    width: 100%;
+    margin-top: 10pt;
+    padding: 15pt 15pt;
+}
+
+.skills h2 {
+    text-align: center;
+    padding-bottom: 15pt;
+    font-weight: bold;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills img {
+    width: 5%;
+}
+
+footer {
+    background-color: darkgray;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contact-site img {
+    width: 20pt;
+    margin-bottom: -5pt;
+}
+
+footer .contact-site {
+    padding: 15pt 15pt;
+}
+
+footer .contact-site a {
+
 }
