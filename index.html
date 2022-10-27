@@ -7,37 +7,39 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <script src="./res/system.js"></script>
     </head>
     <body>
         <header>
             <h1>Vitor Augusto</h1>
             <nav>
-                <i><a href="#about-me">Sobre Mim</a></i>
-                <i><a href="#projects">Projetos</a></i>
-                <i><a href="#skills">Habilidades</a></i>
-                <i><a href="#footer">Contato</a></i>
+                <i id="about-me-title"><a href="#about-me">Sobre Mim</a></i>
+                <i id="projects-title"><a href="#projects">Projetos</a></i>
+                <i id="skills-title"><a href="#skills">Habilidades</a></i>
+                <i id="contact-title"><a href="#footer">Contato</a></i>
             </nav>
         </header>
-        <img id="profile-picture" src="./res/images/profile-picture.png"/>
-
         <main>
             <section class="about-me" id="about-me">
-                <h2>Sobre Mim</h2>
-                <p>Em 2016 eu desenvolvi a curiosidade pela programação. A partir desta época, comecei a pesquisar e estudar por conta própria e aprendi 
-                    sobre o desenvolvimento de jogos, web, servidores e diversos outros tópicos que me chamavam a atenção. Em 2018, comecei a estudar para 
-                    vestibulares com o intuíto de passar em uma faculdade de medicina. Após 2 anos, esse meu objetivo foi concluído, porém decidi seguir uma 
-                    área na qual eu tinha mais afinidade. Desse modo, eu comecei o curso de Engenharia Mecatrônica.</p>
-                <p>Atualmente, estou qualificando minhas habilidades em um curso de Engenharia de Software do exterior para me inserir de vez no mercado de 
-                    programação. Durante esses anos, desenvolvi uma extrema facilidade em aprender qualquer tipo de conceito ou linguagem de programação. 
-                    Escrever códigos para mim é tão natural quanto ler um livro. </p>
+                <div class="about-me-text">
+                    <h2 class="about-me-title">Sobre Mim</h2>
+                    <p class="about-me-description">Em 2016 eu desenvolvi a curiosidade pela programação. A partir desta época, comecei a pesquisar e estudar por conta própria e aprendi 
+                        sobre o desenvolvimento de jogos, web, servidores e diversos outros tópicos que me chamavam a atenção. Em 2018, comecei a estudar para 
+                        vestibulares com o intuíto de passar em uma faculdade de medicina. Após 2 anos esse meu objetivo foi concluído, porém decidi seguir uma 
+                        área na qual eu tinha mais afinidade. Desse modo, eu comecei o curso de Engenharia Mecatrônica.</p>
+                    <p class="about-me-description">Atualmente estou qualificando minhas habilidades em um curso de Engenharia de Software do exterior para me inserir de vez no mercado de 
+                        programação. Durante estes anos, desenvolvi uma extrema facilidade em aprender qualquer tipo de conceito ou linguagem de programação. 
+                        Escrever códigos para mim é tão natural quanto ler um livro. </p>
+                </div>
+                <img id="profile-picture" src="./res/images/profile-picture.png"/>
             </section>
             <section class="projects" id="projects">
-                <h2>Projetos</h2>
+                <h2 class="projects-title">Projetos</h2>
                 <section class="games">
-                    <h3>Desenvolvimento de Jogos</h3>
-                    <p>O meu projeto mais recente foi voltado para os estudos de game design e ciência da computação. No projeto que eu denominei "Rise of The Dying Sun", 
+                    <h3 class="game-development-title">Desenvolvimento de Jogos</h3>
+                    <p class="game-development-description">O meu projeto mais recente foi voltado para os estudos de game design e ciência da computação. No projeto que eu denominei "Rise of The Dying Sun", 
                         decidi criar um jogo em que um personagem silencioso explora um sistema solar vazio. Para isso, programei a física de atração gravitacional dos 
-                        planetas utilizando fórmulas e conceitos físicos reais. Alguns destes projetos podem ser encontrados no meu Github. </p>
+                        planetas utilizando fórmulas e conceitos físicos reais. Este e outros projetos podem ser encontrados no meu GitHub. </p>
                     <div class="game-gifs">
                         <img class="game-gif" src="./res/gifs/game-gif-1.gif">
                         <img class="game-gif" src="./res/gifs/game-gif-2.gif">
@@ -45,14 +47,14 @@
                     </div>
                 </section>
                 <section class="web-development">
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Atualmente estou estudando desenvolvimento web com o curso de engenharia de software da codecademy - situada em Nova Iorque. Um exemplo prático 
+                    <h3 class="web-development-title">Desenvolvimento Web</h3>
+                    <p class="web-development-description">Atualmente estou estudando desenvolvimento web com o curso de engenharia de software da codecademy - situada em Nova Iorque. Um exemplo prático 
                         destes estudos é esse e outros diversos sites que eu venho criando com o intuíto de aprendizado. Para o desenvolvimento, estou utilizando HTML, 
                         CSS e Javascript. Junto disso, estou me familiarizando com diversas ferramentas do front-end e back-end.</p>
                 </section>
             </section>
             <section class="skills" id="skills">
-                <h2>Habilidades</h2>
+                <h2 class="skills-title">Habilidades</h2>
                 <section class="skill-icons">
                     <img class="skill-icon" src="./res/images/html-5.png">
                     <img class="skill-icon" src="./res/images/css-3.png">
@@ -76,5 +78,11 @@
                 <a href="https://outlook.live.com/mail/0/" target="blank">vitoraugusto_14@outlook.com</a>
             </div>
         </footer>
+        <div id="language">
+            <div id="flags">
+                <img onclick="SelectPortuguese()" id="portuguese" src="./res/images/brazil-flag.png">
+                <img onclick="SelectEnglish()" id="english" src="./res/images/united-kingdom-flag.png">
+            </div>
+        </div>
     </body>
 </html>
