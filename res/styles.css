@@ -69,19 +69,27 @@ p {
     text-align: justify;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
     nav i {
-        font-size: 20pt;
+        font-size: 50pt;
         display: block;
-        margin: 15pt 5pt;
+        margin: 30pt 5pt;
         text-align: center;
     }
     .about-me {
         flex-direction: column;
     }
+    h1 {
+        position: absolute;
+        top: 20pt;
+        font-size: 70pt;
+    }
+    nav {
+        margin-top: 80pt;
+    }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
     nav i {
         font-size: 16pt;
         margin: 0 5pt;
@@ -178,6 +186,7 @@ footer .contact-site {
     height: 100%;
     background-color: black;
     z-index: 15;
+    visibility: hidden;
 }
 
 #flags img {
