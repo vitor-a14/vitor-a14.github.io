@@ -186,7 +186,6 @@ footer .contact-site {
     height: 100%;
     background-color: black;
     z-index: 15;
-    visibility: hidden;
 }
 
 #flags img {
